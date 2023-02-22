@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace GymApp
 {
-    internal class ClientInfo
+    public class ClientInfo
     {
+        private string? FirstName;
+        private string? LastName;
+        public void SetFirstNameLastName()
+        {           
+            Console.WriteLine("Insert your first name");
+            string? firstname = Console.ReadLine();
+            FirstName = firstname;
+            Console.WriteLine("Insert your first name");
+            string? lastname = Console.ReadLine();
+            LastName = lastname;           
+        }
+        public string GetFirstName() => FirstName;
+        public string GetLastName() => LastName;
+
+        public void SayHi()
+        {
+            Console.WriteLine($"Hello {FirstName} {LastName}");
+        }
+
     }
 }
