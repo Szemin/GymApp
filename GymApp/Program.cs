@@ -5,9 +5,11 @@ class Program
     {
         Wellcome.WellcomeCardDesign();
         ClientInfo client = new ClientInfo();
-        client.vClientInfo();
         client.SayHi();
-        UserData userData = new UserData();
+        UserData userData = new();
+        userData.PhoneNumber =int.Parse(Console.ReadLine());
+        Console.WriteLine(userData.PhoneNumber);
+       // UserData userData = new UserData();
         
         Console.ReadKey();
     }

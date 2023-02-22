@@ -10,7 +10,7 @@ namespace GymApp
     {        
         private string? FirstName;              
         private string? LastName;               
-        public void vClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
+        public ClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
         {           
             Console.WriteLine("Insert your first name");
             string? firstname = Console.ReadLine();

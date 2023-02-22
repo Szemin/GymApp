@@ -8,15 +8,20 @@ namespace GymApp
 {
     public class UserData
     {
-        //public string FirstName { get; set; }
-        //public string LastName { get; set; }
-        //public double PinNumber { get; set; }
-        public string FirstName;
-        public UserData()
+       public string FirstName { get; set; }
+       public string LastName { get; set; }
+       public string City { get; set; }
+       public int PhoneNumber { get; set; }
+       public DateTime DayOfBirth{ get; set; }
+        
+        public void UserPhone()
         {
-            ClientInfo client = new ClientInfo();
-            string firstName = client.GetFirstName();
-            FirstName = firstName;
+            //Console.WriteLine("Insert your phone number");
+            //int phonenumber = int.Parse(Console.ReadLine());
+            //phonenumber = PhoneNumber;
+            //ClientInfo client = new ClientInfo();
+            //string firstName = client.GetFirstName();
+            //FirstName = firstName;
 
             //Console.WriteLine($"{client.GetFirstName()}");
             //Console.WriteLine($"{client.GetLastName()}");
