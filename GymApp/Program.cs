@@ -5,7 +5,7 @@ class Program
     {
         Wellcome.WellcomeCardDesign();
         ClientInfo client = new ClientInfo();
-        client.SetFirstNameLastName();
+        //client.SetFirstNameLastName();
         client.SayHi();
         Console.ReadKey();
     }

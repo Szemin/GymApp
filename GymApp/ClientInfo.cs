@@ -9,8 +9,8 @@ namespace GymApp
     public class ClientInfo
     {
         private string? FirstName;
-        private string? LastName;
-        public void SetFirstNameLastName()
+        private string? LastName;      
+        public ClientInfo()
         {           
             Console.WriteLine("Insert your first name");
             string? firstname = Console.ReadLine();
