@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 namespace GymApp
 {
     public class ClientInfo
-    {
+    {        
         private string? FirstName;              
         private string? LastName;               
-        public ClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
+        public void vClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
         {           
             Console.WriteLine("Insert your first name");
             string? firstname = Console.ReadLine();
             FirstName = firstname;
-            Console.WriteLine("Insert your first name");
+            Console.WriteLine("Insert your last name");
             string? lastname = Console.ReadLine();
             LastName = lastname;           
         }
