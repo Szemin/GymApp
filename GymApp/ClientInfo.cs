@@ -19,12 +19,12 @@ namespace GymApp
             string? lastname = Console.ReadLine();
             LastName = lastname;           
         }
-        public static string? GetFirstName() => FirstName;     
-        public static string? GetLastName() => LastName;
+        public static string? GetFirstName() => FirstName;     // zwraca imie
+        public static string? GetLastName() => LastName;        //zwraca nazwisko
 
         public void SayHi()
         {
-            Console.WriteLine($"Hello {FirstName} {LastName}");
+            Console.WriteLine($"Hello {FirstName} {LastName}");  //wita użytkownika 
         }
 
     }

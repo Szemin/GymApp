@@ -6,12 +6,11 @@ class Program
         Wellcome.WellcomeCardDesign();
         ClientInfo client = new ClientInfo();
         client.SayHi();
-  
-        //userData.PhoneNumber =int.Parse(Console.ReadLine());
-        //Console.WriteLine(userData.PhoneNumber);
-        UserData.UserPhone();
+        Wellcome.GymProfileCard();
+       
+        UserData.UserProfile();
 
-        //Console.WriteLine($" to imie {ClientInfo.GetFirstName()}");
+        
 
         Console.ReadKey();
     }

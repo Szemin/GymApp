@@ -17,5 +17,15 @@ namespace GymApp
             Console.WriteLine("----------------------------");
             Console.WriteLine();
         }
+        public static void GymProfileCard()
+        {
+            Console.WriteLine("                            ");
+            Console.WriteLine("^    -----Gym Member-----    ^");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine($"-----First Name:  {ClientInfo.GetFirstName()}     -----");
+            Console.WriteLine($"-----Last Name:   {ClientInfo.GetLastName()}     -----");
+            Console.WriteLine($"-----Date of birth:                             ");
+            Console.WriteLine();
+        }
     }
 }
