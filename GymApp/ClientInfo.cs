@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 namespace GymApp
 {
     public class ClientInfo
-    {        
-        private static string? FirstName;              
+    {
+        private static string? FirstName;
+        
+        public string Dupa { get; set; }
+
         private static string? LastName;               
         public ClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
         {           
@@ -22,10 +25,10 @@ namespace GymApp
         public static string? GetFirstName() => FirstName;     // zwraca imie
         public static string? GetLastName() => LastName;        //zwraca nazwisko
 
-        public void SayHi()
-        {
-            Console.WriteLine($"Hello {FirstName} {LastName}");  //wita użytkownika 
-        }
+        //public void SayHi()
+        //{
+        //    Console.WriteLine($"Hello {FirstName} {LastName}");  //wita użytkownika 
+        //}
 
     }
 }

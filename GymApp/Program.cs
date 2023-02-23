@@ -7,11 +7,17 @@ class Program
 
 
         ClientInfo client = new ClientInfo(); //konstruktor
-        
+
+        client.Dupa = Console.ReadLine();
+
+        Console.WriteLine($"client to {client.Dupa}");
+
+
+
         UserData userData = new(); //obiekt
 
         UserData.UserProfile();
-        client.SayHi();
+       
 
 
         Console.ReadKey();
