@@ -14,7 +14,7 @@ namespace GymApp
        public int PhoneNumber { get; set; }
        public DateTime DayOfBirth{ get; set; }
         
-        public void UserPhone()
+        public static void UserPhone()
         {
             //Console.WriteLine("Insert your phone number");
             //int phonenumber = int.Parse(Console.ReadLine());
@@ -23,7 +23,8 @@ namespace GymApp
             //string firstName = client.GetFirstName();
             //FirstName = firstName;
 
-            //Console.WriteLine($"{client.GetFirstName()}");
+            Console.WriteLine($"First Name: {ClientInfo.GetFirstName()}");
+
             //Console.WriteLine($"{client.GetLastName()}");
         }
     }

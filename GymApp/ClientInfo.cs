@@ -8,8 +8,8 @@ namespace GymApp
 {
     public class ClientInfo
     {        
-        private string? FirstName;              
-        private string? LastName;               
+        private static string? FirstName;              
+        private static string? LastName;               
         public ClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
         {           
             Console.WriteLine("Insert your first name");
@@ -19,8 +19,8 @@ namespace GymApp
             string? lastname = Console.ReadLine();
             LastName = lastname;           
         }
-        public string? GetFirstName() => FirstName;     
-        public string? GetLastName() => LastName;
+        public static string? GetFirstName() => FirstName;     
+        public static string? GetLastName() => LastName;
 
         public void SayHi()
         {
