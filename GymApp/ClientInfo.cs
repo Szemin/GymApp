@@ -10,7 +10,7 @@ namespace GymApp
     {
         private static string? FirstName;
         
-        public string Dupa { get; set; }
+       // public string? Data { get; set; }  //test właściwości zakończony powodzeniem, działa identycznie jak konstruktor poniżej...
 
         private static string? LastName;               
         public ClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  

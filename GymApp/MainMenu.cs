@@ -17,6 +17,14 @@ namespace GymApp
             Console.WriteLine("----------------------------");
             Console.WriteLine();
         }
-    
+        public static void PersonalTrainers()
+        {
+            Console.WriteLine("1.Ronnie Coleman");
+            Console.WriteLine("2.Jay Cutler");
+            Console.WriteLine("3.Arnold Schwarzenegger");
+            Console.WriteLine("4.Chris Bumstead");
+            Console.WriteLine("5.Michał Owczarzak");
+            Console.WriteLine();
+        }
     }
 }
