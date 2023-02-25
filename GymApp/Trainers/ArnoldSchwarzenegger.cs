@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace GymApp.Trainers
 {
-    internal class ArnoldSchwarzenegger
+     class ArnoldSchwarzenegger : IPersonalTrainers
     {
+        public string Name { get; set; }
+        public string Ocupation { get; set; }
+        public int MrOlimpiaWins { get; set; }
+        public string Message { get; set; }
     }
 }

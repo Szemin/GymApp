@@ -14,7 +14,9 @@ namespace GymApp
         {
             Console.WriteLine($"First Name: {ClientInfo.GetFirstName()}");
             Console.WriteLine($"Last Name: {ClientInfo.GetLastName()}");
-           
+            //Console.WriteLine($"Country of origin: {ClientInfo.GetCountryOfOrigin()}");
+            //Console.WriteLine($"Date of birth: {ClientInfo.DateOfBirth()}");
+
         }
             //public static void GymProfileCard()
             //{
