@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Wellcome.WellcomeCardDesign();
+        Wellcome.WellcomeCardDesign(); //powitalna karta
 
 
         ClientInfo client = new ClientInfo(); //konstruktor
@@ -13,13 +13,10 @@ class Program
         //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
         //UserData userData = new(); //obiekt 
         UserData.UserProfile(); // wyświetla karte profilu klubowicza
+        Wellcome.PersonalTrainers();//lista trenerów do wyboru
 
-        ChrisBumstead chrisBumstead = new();
-        //chrisBumstead.Name = "Chris Bumstead";
-        //chrisBumstead.Ocupation = "Canada";
-        //chrisBumstead.MrOlimpiaWins = 4;
-        //chrisBumstead.Message = "Lift that up baby";
-        chrisBumstead.TrainerData();
+        ChrisBumstead chrisBumstead = new(); //obiekt klasy ChrisBumstead => do przeniesienia inna klasa     
+        chrisBumstead.TrainerData(); //info odnośnie trenera
 
 
         Console.ReadKey();

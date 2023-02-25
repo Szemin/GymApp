@@ -9,7 +9,7 @@ namespace GymApp
      interface IPersonalTrainers
     {
          string Name{get;set;}
-         string Ocupation { get; set; }
+         string Ocupation { get; set; } //change it to country of origin u dumbo
          int MrOlimpiaWins { get; set; }
          string Message { get; set; }
     }
