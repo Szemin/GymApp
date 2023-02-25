@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GymApp
 {
-    internal interface PersonalTrainers
+    internal interface IPersonalTrainers
     {
     }
 }
