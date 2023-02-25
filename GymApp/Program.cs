@@ -10,7 +10,7 @@ class Program
         //client.Data = Console.ReadLine();
         //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
         //UserData userData = new(); //obiekt 
-        UserData.UserProfile();
+        UserData.UserProfile(); // wyświetla karte profilu klubowicza
        
 
 
