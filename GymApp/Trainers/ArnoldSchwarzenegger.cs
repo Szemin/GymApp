@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GymApp
+namespace GymApp.Trainers
 {
-    internal class JayCutler
+    internal class ArnoldSchwarzenegger
     {
     }
 }

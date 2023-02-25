@@ -23,7 +23,6 @@ namespace GymApp
             Console.WriteLine("2.Jay Cutler");
             Console.WriteLine("3.Arnold Schwarzenegger");
             Console.WriteLine("4.Chris Bumstead");
-            Console.WriteLine("5.Michał Owczarzak");
             Console.WriteLine();
         }
     }
