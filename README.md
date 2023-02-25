@@ -10,3 +10,4 @@ Console Project using at least everytnhing of OOP i know. Including Classes => p
 3.User can add him/her self at membership list after choose carnet + optionally training program with one of the trainers
 4.User can delete his data 
 5.After "purhase" at purhase menu user will get message from one of bodybuilders he choose, or exceptionally just wellcome card 
+6. Program will create file with user data - profile card + other things like trainer / type of carnet/plan
