@@ -8,6 +8,13 @@ namespace GymApp
 {
     public class Wellcome
     {
+        static List<string> Trainers = new List<string>
+        {
+            "1.Ronnie Coleman",
+            "2.Jay Cutler",
+            "3.Arnold Schwarzenegger",
+            "4.Chris Bumstead"
+        };
         public static void WellcomeCardDesign()
         {
             Console.WriteLine("                            ");
@@ -19,11 +26,10 @@ namespace GymApp
         }
         public static void PersonalTrainers()
         {
-            Console.WriteLine("1.Ronnie Coleman");
-            Console.WriteLine("2.Jay Cutler");
-            Console.WriteLine("3.Arnold Schwarzenegger");
-            Console.WriteLine("4.Chris Bumstead");
-            Console.WriteLine();
+          foreach (string trainers in Trainers)
+            {
+                Console.WriteLine(trainers);
+            }
         }
     }
 }

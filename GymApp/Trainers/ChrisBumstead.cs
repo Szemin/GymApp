@@ -18,9 +18,9 @@ namespace GymApp.Trainers
             Name = "Chris Bumstead";
             CountryOfOrigin = "Canada";
             MrOlimpiaWins = 4;
-            Message = "Lift that up baby";
+            Message = "Nice";
 
-            Console.WriteLine($" Name: {Name} \n Ocupation: {CountryOfOrigin} \n MrOlimpia Wins: {MrOlimpiaWins} \n Message: {Message}");
+            Console.WriteLine($" Name: {Name} \n Country Of Origin: {CountryOfOrigin} \n MrOlimpia Wins: {MrOlimpiaWins} \n Message: {Message}");
         }
     }
 }

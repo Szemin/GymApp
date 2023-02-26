@@ -14,12 +14,12 @@ namespace GymApp.Trainers
         public string Message { get; set; }
         public void TrainerData()
         {
-            Name = "Chris Bumstead";
-            CountryOfOrigin = "Canada";
+            Name = "Jay Cutler";
+            CountryOfOrigin = "USA";
             MrOlimpiaWins = 4;
-            Message = "Lift that up baby";
+            Message = "I'm big";
 
-            Console.WriteLine($" Name: {Name} \n Ocupation: {CountryOfOrigin} \n MrOlimpia Wins: {MrOlimpiaWins} \n Message: {Message}");
+            Console.WriteLine($" Name: {Name} \n Country Of Origin: {CountryOfOrigin} \n MrOlimpia Wins: {MrOlimpiaWins} \n Message: {Message}");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GymApp
 {
-     interface IPersonalTrainers
+     interface IPersonalTrainers       //interfejs zawierający właściwości które wywołuje w klasach poszczególnych trenerów z info o nich
     {
          string Name{get;set;}
          string CountryOfOrigin { get; set; } 
