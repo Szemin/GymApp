@@ -20,7 +20,7 @@ namespace GymApp
             FirstName = firstname;
             Console.WriteLine("Insert your last name");
             string? lastname = Console.ReadLine();
-            LastName = lastname;           
+            LastName = lastname;            
         }
         public static string? GetFirstName() => FirstName;     // zwraca imie
         public static string? GetLastName() => LastName;        //zwraca nazwisko
