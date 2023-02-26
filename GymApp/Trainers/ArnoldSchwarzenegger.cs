@@ -9,17 +9,17 @@ namespace GymApp.Trainers
      class ArnoldSchwarzenegger : IPersonalTrainers
     {
         public string Name { get; set; }
-        public string Ocupation { get; set; }
+        public string CountryOfOrigin { get; set; }
         public int MrOlimpiaWins { get; set; }
         public string Message { get; set; }
         public void TrainerData()
         {
             Name = "Chris Bumstead";
-            Ocupation = "Canada";
+            CountryOfOrigin = "Canada";
             MrOlimpiaWins = 4;
             Message = "Lift that up baby";
 
-            Console.WriteLine($" Name: {Name} \n Ocupation: {Ocupation} \n MrOlimpia Wins: {MrOlimpiaWins} \n Message: {Message}");
+            Console.WriteLine($" Name: {Name} \n Ocupation: {CountryOfOrigin} \n MrOlimpia Wins: {MrOlimpiaWins} \n Message: {Message}");
         }
     }
 }
