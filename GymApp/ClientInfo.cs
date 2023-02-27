@@ -28,7 +28,7 @@ namespace GymApp
             LastName = lastname;
             Console.WriteLine("Where are you from");
             string country = Console.ReadLine();
-            CountryOfOrigin = country;
+            CountryOfOrigin = country; 
             Console.WriteLine("Insert your phone number");
             int number = int.Parse(Console.ReadLine());
             PhoneNumber = number;
