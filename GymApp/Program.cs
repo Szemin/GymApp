@@ -6,7 +6,11 @@ class Program
     static void Main()
     {
         Wellcome.WellcomeCardDesign(); //powitalna karta
+
         ClientInfo client = new ClientInfo(); //konstruktor
+
+        //tu teraz wyświetlić listę z opcjami
+        ListOfActions.test();
         //client.Data = Console.ReadLine();
         //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
         //UserData userData = new(); //obiekt 
