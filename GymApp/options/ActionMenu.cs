@@ -11,7 +11,7 @@ namespace GymApp.options
         public static void MenuOfAction()
         {
         start:
-            int number = int.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine()) ;    //try catch zrobić
 
             switch (number)
             {
@@ -42,7 +42,8 @@ namespace GymApp.options
                 default:
                     Console.WriteLine("You choose wrong option");
                     goto start;
-                    break;
+                   
+                    
             }
         }
     }
