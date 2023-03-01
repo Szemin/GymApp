@@ -8,7 +8,7 @@ namespace GymApp.Trainers
 {
      class ArnoldSchwarzenegger : IPersonalTrainers
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         public string CountryOfOrigin { get; set; }
         public int MrOlimpiaWins { get; set; }
         public string Message { get; set; }

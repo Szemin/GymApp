@@ -6,8 +6,6 @@ class Program
     static void Main()
     {
         Wellcome.WellcomeCardDesign(); //powitalna karta
-
-
         ClientInfo client = new ClientInfo(); //konstruktor
         //client.Data = Console.ReadLine();
         //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
