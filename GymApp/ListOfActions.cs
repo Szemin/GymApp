@@ -15,18 +15,18 @@ namespace GymApp
     //}
     public class ListOfActions
     {
-       private static List<string> ShowActionList()
+       public static List<string> ShowActionList()
         {
-            List<string> actions = new List<string>
+           List<string> actions = new List<string>
         {
-            "1.ShowTrainerList",
-            "2.ShowTrainingPlans",
-            "3.CreateProfileCard",
-            "4.BuyMembership"
+            "1.Show Trainer List",
+            "2.Show Training Plans",
+            "3.Create Profile Card",
+            "4.Buy Membership"
         };
             return actions;
         }
-       public static void test()
+       public static void ActionList()
         {
             List<string> actions = ShowActionList();
             foreach (var list in actions)
