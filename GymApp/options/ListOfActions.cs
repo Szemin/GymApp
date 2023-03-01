@@ -9,7 +9,7 @@ namespace GymApp.options
    
     public class ListOfActions
     {
-        public static List<string> ShowActionList()
+        private static List<string> ShowActionList()
         {
             List<string> actions = new List<string>
         {
@@ -28,6 +28,7 @@ namespace GymApp.options
                 Console.WriteLine(list);
             }
         }
+       
     }
 
 }
