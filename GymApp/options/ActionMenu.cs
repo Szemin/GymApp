@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GymApp
+namespace GymApp.options
 {
     public class ActionMenu
     {
@@ -21,14 +21,14 @@ namespace GymApp
                 case 2:
                     break;
                 case 3:
-                    back:
+                back:
                     Console.WriteLine("Do you want to create new member card?  yes/no");
                     string yesNo = Console.ReadLine();
-                    if(yesNo == "no" || yesNo == "No")
+                    if (yesNo == "no" || yesNo == "No")
                     {
                         goto start;
                     }
-                    else if (yesNo == "yes"||yesNo=="Yes")
+                    else if (yesNo == "yes" || yesNo == "Yes")
                     {
                         ClientInfo client = new ClientInfo(); //konstruktor
                     }

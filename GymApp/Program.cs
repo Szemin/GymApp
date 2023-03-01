@@ -1,4 +1,5 @@
 ﻿using GymApp;
+using GymApp.options;
 using GymApp.Trainers;
 
 class Program
@@ -11,7 +12,7 @@ class Program
         Start:
         ListOfActions.ActionList();
         ActionMenu.MenuOfAction();
-        goto Start;
+        //goto Start;
 
         UserData.UserProfile(); // wyświetla karte profilu klubowicza
 

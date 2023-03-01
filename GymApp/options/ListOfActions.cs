@@ -4,20 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GymApp
+namespace GymApp.options
 {
-    //public enum Action
-    //{
-    //    ShowTrainerList,
-    //    ShowTrainingPlans,
-    //    CreateProfileCard,
-    //    BuyMembership
-    //}
+   
     public class ListOfActions
     {
-       public static List<string> ShowActionList()
+        public static List<string> ShowActionList()
         {
-           List<string> actions = new List<string>
+            List<string> actions = new List<string>
         {
             "1.Show Trainer List",
             "2.Show Training Plans",
@@ -26,7 +20,7 @@ namespace GymApp
         };
             return actions;
         }
-       public static void ActionList()
+        public static void ActionList()
         {
             List<string> actions = ShowActionList();
             foreach (var list in actions)
