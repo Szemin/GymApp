@@ -22,7 +22,7 @@ namespace GymApp
             "1.Show Trainer List",
             "2.Show Training Plans",
             "3.Create Profile Card",
-            "4.Buy Membership"
+            "4.Buy Membership \n"
         };
             return actions;
         }

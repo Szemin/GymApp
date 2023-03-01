@@ -21,11 +21,27 @@ namespace GymApp
                 case 2:
                     break;
                 case 3:
-                    ClientInfo client = new ClientInfo(); //konstruktor
+                    back:
+                    Console.WriteLine("Do you want to create new member card?  yes/no");
+                    string yesNo = Console.ReadLine();
+                    if(yesNo == "no" || yesNo == "No")
+                    {
+                        goto start;
+                    }
+                    else if (yesNo == "yes"||yesNo=="Yes")
+                    {
+                        ClientInfo client = new ClientInfo(); //konstruktor
+                    }
+                    else
+                    {
+                        goto back;
+                    }
                     break;
                 case 4:
                     break;
                 default:
+                    Console.WriteLine("You choose wrong option");
+                    goto start;
                     break;
             }
         }
