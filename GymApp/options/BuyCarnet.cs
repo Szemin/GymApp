@@ -18,7 +18,7 @@ namespace GymApp.options
         public int RegularCarnet { get; set; }
         public int PremiumCarnet { get; set; }
 
-        public static void ReadFiles()
+        public static void ReadFiles()          //wyświetla karnety
         {
             var basic = File.ReadAllText(@"D:\karnety\BASIC.txt");
             var regular = File.ReadAllText(@"D:\karnety\REGULAR.txt");
