@@ -19,6 +19,7 @@ namespace GymApp.options
                     Wellcome.PersonalTrainers(); //lista trenerów do wyboru
                     break;
                 case 2:
+                    BuyCarnet.ReadFiles();
                     break;
                 case 3:
                 back:
