@@ -37,7 +37,7 @@ namespace GymApp.options
         public static string GetFirstName() => FirstName;     // zwraca imie
         public static string GetLastName() => LastName;        //zwraca nazwisko
         public static string GetCountryOfOrigin() => CountryOfOrigin;  //zwraca kraj pochodzenia
-        public static int GetPhoneNumber() => PhoneNumber;
+        public static int GetPhoneNumber() => PhoneNumber;  //zwraca numer tel
         //public void SayHi()
         //{
         //    Console.WriteLine($"Hello {FirstName} {LastName}");  //wita użytkownika 

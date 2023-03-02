@@ -10,8 +10,8 @@ class Program
         Console.WriteLine("press button :");
         Console.ReadLine();
         Start:
-        ListOfActions.ActionList();
-        ActionMenu.MenuOfAction();
+        ListOfActions.ActionList();  //lista wyboru akcji 
+        ActionMenu.MenuOfAction();   //menu wyboru akcji 
         //goto Start;
 
         UserData.UserProfile(); // wyświetla karte profilu klubowicza

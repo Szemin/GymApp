@@ -9,7 +9,7 @@ namespace GymApp.options
    
     public class ListOfActions
     {
-        private static List<string> ShowActionList()
+        private static List<string> ShowActionList() //lista trenerów
         {
             List<string> actions = new List<string>
         {
@@ -20,7 +20,7 @@ namespace GymApp.options
         };
             return actions;
         }
-        public static void ActionList()
+        public static void ActionList()     //wywołanie listy trenerów
         {
             List<string> actions = ShowActionList();
             foreach (var list in actions)

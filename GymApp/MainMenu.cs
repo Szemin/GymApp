@@ -8,7 +8,7 @@ namespace GymApp
 {
     public class Wellcome
     {
-        static List<string> Trainers = new List<string>
+        static List<string> Trainers = new List<string>  //lista trenerów
         {
             "1.Ronnie Coleman",
             "2.Jay Cutler",
