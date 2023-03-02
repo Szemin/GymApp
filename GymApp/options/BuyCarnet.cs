@@ -8,28 +8,15 @@ namespace GymApp.options
 { 
      class BuyCarnet
     {
-        public BuyCarnet(int basicCarnet, int regularCarnet, int premiumCarnet)
+        public BuyCarnet(int basicCarnet, int regularCarnet, int premiumCarnet)  //trzeba wymyślić sposób na połączenie tego z karnetami
         {
             BasicCarnet = basicCarnet;
             RegularCarnet = regularCarnet;
             PremiumCarnet = premiumCarnet;
         }
-        public int BasicCarnet { get; set; }
-        public int RegularCarnet { get; set; }
-        public int PremiumCarnet { get; set; }
+        private int BasicCarnet { get; set; }
+        private int RegularCarnet { get; set; }
+        private int PremiumCarnet { get; set; }
 
-        public static void ReadFiles()          //wyświetla karnety
-        {
-            var basic = File.ReadAllText(@"D:\karnety\BASIC.txt");
-            var regular = File.ReadAllText(@"D:\karnety\REGULAR.txt");
-            var premium = File.ReadAllText(@"D:\karnety\PREMIUM.txt");
-
-            Console.WriteLine(basic);
-            Console.WriteLine();
-            Console.WriteLine(regular);
-            Console.WriteLine();
-            Console.WriteLine(premium);
-
-        }
     }
 }
