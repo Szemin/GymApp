@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace GymApp.options
 { 
-    abstract class BuyCarnet
+     class BuyCarnet
     {
-        private string BasicCarnet { get; set; }
-        private string MiddleCarnet { get; set; }
-        private string PremiumCarnet { get; set; }
+        public BuyCarnet()
+        {
+
+        }
+        public int BasicCarnet { get; set; }
+        public int RegularCarnet { get; set; }
+        public int PremiumCarnet { get; set; }
+
     }
 }

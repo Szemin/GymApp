@@ -15,6 +15,10 @@ namespace GymApp
             "3.Arnold Schwarzenegger",
             "4.Chris Bumstead"
         };
+        //public void DisplayTrainer(string number)
+        //{
+        //    var trainer = Trainers.FirstOrDefault(c => c.Number == number);  //jeszcze do dopracowania co chciałem zrobić
+        //}
         public static void WellcomeCardDesign()
         {
             Console.WriteLine("                            ");
