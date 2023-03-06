@@ -9,7 +9,7 @@ class Program
         Wellcome.WellcomeCardDesign(); //powitalna karta
         Console.WriteLine("press button :");
         Console.ReadLine();
-        Start:
+        
         ListOfActions.ActionList();  //lista wyboru akcji 
         ActionMenu.MenuOfAction();   //menu wyboru akcji 
         //goto Start;

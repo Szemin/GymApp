@@ -10,40 +10,45 @@ namespace GymApp.options
     {
         public static void MenuOfAction()
         {
-        start:
-            int number = int.Parse(Console.ReadLine()) ;    //try catch zrobić
+            int? number = 0;
+            while(number != null)
+            { 
+            number = int.Parse(Console.ReadLine()) ;    //try catch zrobić
 
-            switch (number)
-            {
-                case 1:
-                    Wellcome.PersonalTrainers(); //lista trenerów do wyboru
-                    break;
-                case 2:
-                    CarnetList.ReadFiles();
-                    break;
-                case 3:
-                back:
-                    Console.WriteLine("Do you want to create new member card?  yes/no");
-                    string yesNo = Console.ReadLine();
-                    if (yesNo == "no" || yesNo == "No")
-                    {
-                        goto start;
-                    }
-                    else if (yesNo == "yes" || yesNo == "Yes")
-                    {
-                        ClientInfo client = new ClientInfo(); //konstruktor
-                    }
-                    else
-                    {
-                        goto back;
-                    }
-                    break;
-                case 4:
-                    break;
-                default:
-                    Console.WriteLine("You choose wrong option");
-                    goto start;
-                   
+                switch (number)
+                {
+                    case 1:
+                        Wellcome.PersonalTrainers(); //lista trenerów do wyboru
+                        break;
+                    case 2:
+                        CarnetList.ReadFiles();
+                        break;
+                    case 3:
+                        Console.WriteLine("Do you want to create new member card?  yes/no");
+                        string yesNo = "";
+                        while (yesNo != "yes" || yesNo != "Yes" || yesNo != "no" || yesNo != "No")
+                        {
+                            yesNo = Console.ReadLine();
+                            Console.WriteLine("incorrect value");
+                            if (yesNo is "yes" or "Yes")
+                            {
+                                ClientInfo client = new ClientInfo(); //konstruktor
+                                break;
+                            }
+                            else if (yesNo is "no" or "No")
+                            {
+                                ListOfActions.ActionList();
+                                MenuOfAction();
+                            }
+                        }
+                        break;
+                    case 4:
+                        break;
+                    default:
+                        Console.WriteLine("You choose wrong option");
+                        MenuOfAction();
+                        break;
+                }   
                     
             }
         }
