@@ -26,7 +26,7 @@ namespace GymApp.options;
                     case 3:
                         Console.WriteLine("Do you want to create new member card?  yes/no");
                         string yesNo = "";
-                        while (yesNo != "yes" || yesNo != "Yes" || yesNo != "no" || yesNo != "No")
+                        while (yesNo != "yes" || yesNo != "Yes" || yesNo != "no" || yesNo != "No") //xD
                         {
                             yesNo = Console.ReadLine();
                             
@@ -44,7 +44,7 @@ namespace GymApp.options;
                         }
                         break;
                     case 4:
-                    ClientInfo.Client();
+                    //ClientInfo.Client();
                         break;
                     default:
                         Console.WriteLine("You choose wrong option");

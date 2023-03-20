@@ -19,7 +19,7 @@ namespace GymApp.options;
             };
             return actions;
         }
-        public static void ActionList()     //wywołanie listy trenerów
+        public static void ActionList()
         {
             List<string> actions = ShowActionList();
             foreach (var list in actions)
