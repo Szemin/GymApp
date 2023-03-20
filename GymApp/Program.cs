@@ -1,28 +1,28 @@
 ﻿using GymApp;
 using GymApp.options;
-using GymApp.Trainers;
 
-class Program
-{
-    static void Main()
+
+    class Program
     {
-        Wellcome.WellcomeCardDesign(); //powitalna karta
-        Console.WriteLine("press button :");
-        Console.ReadLine();
+        static void Main()
+        {
+            Wellcome.WellcomeCardDesign(); //powitalna karta
+            Console.WriteLine("press button :");
+            Console.ReadLine();
         
-        ListOfActions.ActionList();  //lista wyboru akcji 
-        ActionMenu.MenuOfAction();   //menu wyboru akcji 
-        //goto Start;
+            ListOfActions.ActionList();  //lista wyboru akcji 
+            ActionMenu.MenuOfAction();   //menu wyboru akcji 
+            //goto Start;
 
-        UserData.UserProfile(); // wyświetla karte profilu klubowicza
+            UserData.UserProfile(); // wyświetla karte profilu klubowicza
 
-        //client.Data = Console.ReadLine();
-        //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
+            //client.Data = Console.ReadLine();
+            //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
 
-       // ChrisBumstead chrisBumstead = new(); //obiekt klasy ChrisBumstead => do przeniesienia inna klasa     
-       // chrisBumstead.TrainerData(); //info odnośnie trenera
+            // ChrisBumstead chrisBumstead = new(); //obiekt klasy ChrisBumstead => do przeniesienia inna klasa     
+            // chrisBumstead.TrainerData(); //info odnośnie trenera
 
 
-        Console.ReadKey();
+            Console.ReadKey();
+        }
     }
-}

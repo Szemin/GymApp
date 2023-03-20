@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GymApp.options
 {
-    public class ActionMenu
+    public class ActionMenu 
     {
         public static void MenuOfAction()
         {
