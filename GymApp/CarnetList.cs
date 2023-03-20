@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+namespace GymApp;
 
-namespace GymApp
-{
      class CarnetList
     {
         public static void ReadFiles()          //wyświetla karnety
@@ -14,12 +13,16 @@ namespace GymApp
             var regular = File.ReadAllText(@"D:\karnety\REGULAR.txt");
             var premium = File.ReadAllText(@"D:\karnety\PREMIUM.txt");
 
-            Console.WriteLine(basic);
-            Console.WriteLine();
-            Console.WriteLine(regular);
-            Console.WriteLine();
-            Console.WriteLine(premium);
+           StringBuilder sb = new StringBuilder();  
+            sb.AppendLine(basic);
+            sb.AppendLine();
+            sb.AppendLine(regular);
+            sb.AppendLine();
+            sb.AppendLine(premium);
+            sb.AppendLine();
+            var result = sb.ToString();
+            Console.WriteLine(result);
 
         }
     }
-}
+

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+namespace GymApp.options;
 
-namespace GymApp.options
-{
     public class ActionMenu 
     {
         public static void MenuOfAction()
@@ -13,12 +12,13 @@ namespace GymApp.options
             int? number = 0;
             while(number != null)
             { 
-            number = int.Parse(Console.ReadLine()) ;    //try catch zrobić
+            number = int.Parse(Console.ReadLine());    //try catch zrobić
 
                 switch (number)
                 {
                     case 1:
-                        Wellcome.PersonalTrainers(); //lista trenerów do wyboru
+                        Wellcome.ShowTList();
+                        Wellcome.ShowData();                //lista trenerów do wyboru
                         break;
                     case 2:
                         CarnetList.ReadFiles();
@@ -29,10 +29,10 @@ namespace GymApp.options
                         while (yesNo != "yes" || yesNo != "Yes" || yesNo != "no" || yesNo != "No")
                         {
                             yesNo = Console.ReadLine();
-                            Console.WriteLine("incorrect value");
+                            
                             if (yesNo is "yes" or "Yes")
                             {
-                                ClientInfo client = new ClientInfo(); //konstruktor
+                            ClientInfo.Client(); //konstruktor
                                 break;
                             }
                             else if (yesNo is "no" or "No")
@@ -40,9 +40,11 @@ namespace GymApp.options
                                 ListOfActions.ActionList();
                                 MenuOfAction();
                             }
+                            else { Console.WriteLine("incorrect value"); }
                         }
                         break;
                     case 4:
+                    ClientInfo.Client();
                         break;
                     default:
                         Console.WriteLine("You choose wrong option");
@@ -53,4 +55,4 @@ namespace GymApp.options
             }
         }
     }
-}
+

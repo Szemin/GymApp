@@ -6,23 +6,14 @@ using GymApp.options;
     {
         static void Main()
         {
-            Wellcome.WellcomeCardDesign(); //powitalna karta
+            Wellcome.WellcomeCard(); //powitalna karta
             Console.WriteLine("press button :");
-            Console.ReadLine();
-        
+            Console.ReadLine();       
             ListOfActions.ActionList();  //lista wyboru akcji 
-            ActionMenu.MenuOfAction();   //menu wyboru akcji 
-            //goto Start;
-
+            ActionMenu.MenuOfAction();   //menu wyboru akcji            
             UserData.UserProfile(); // wyświetla karte profilu klubowicza
 
-            //client.Data = Console.ReadLine();
-            //Console.WriteLine($"client to {client.Data}");  //sprawdzanie czy dobrze pobrało dane 
-
-            // ChrisBumstead chrisBumstead = new(); //obiekt klasy ChrisBumstead => do przeniesienia inna klasa     
-            // chrisBumstead.TrainerData(); //info odnośnie trenera
-
-
+           
             Console.ReadKey();
         }
     }

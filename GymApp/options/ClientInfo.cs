@@ -3,45 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+namespace GymApp.options;
 
-namespace GymApp.options
-{
-    public class ClientInfo
+    internal class ClientInfo
     {
-        private static string FirstName;
-
-        // public string? Data { get; set; }  //test właściwości zakończony powodzeniem, działa identycznie jak konstruktor poniżej...
-
-        private static string LastName;
-
-        private static string CountryOfOrigin;
-
-        private static int PhoneNumber;
-
-        public ClientInfo()             //konstruktor zamiast metody void pobierający imie i nazwisko użytkownika  
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Country { get; set; }
+        public int PhoneNumber { get; set; }
+    public ClientInfo()
+    {
+        Console.WriteLine("Insert your First name");
+        string firstName = Console.ReadLine();
+        Console.WriteLine("Insert your Last name");
+        string lastName = Console.ReadLine();
+        Console.WriteLine("Insert your Country of origin");
+        string country = Console.ReadLine();
+        Console.WriteLine("Insert your phone number");
+        int phoneNumber = int.Parse(Console.ReadLine());
+    }  
+    public ClientInfo (string firstName, string lastName, string country, int phoneNumber)
+    { 
+        FirstName = firstName;
+        LastName = lastName;
+        Country = country;
+        PhoneNumber = phoneNumber;
+    }
+        public static void Client()
         {
-            Console.WriteLine("Insert your first name");
-            string firstname = Console.ReadLine();
-            FirstName = firstname = null!;
-            Console.WriteLine("Insert your last name");
-            string lastname = Console.ReadLine();
-            LastName = lastname = null!;
-            Console.WriteLine("Where are you from");
-            string country = Console.ReadLine();
-            CountryOfOrigin = country = null!;
-            Console.WriteLine("Insert your phone number");
-            int number = int.Parse(Console.ReadLine());
-            PhoneNumber = number;
-           
+              ClientInfo client = new();  
         }
-        public static string GetFirstName() => FirstName;     // zwraca imie
-        public static string GetLastName() => LastName;        //zwraca nazwisko
-        public static string GetCountryOfOrigin() => CountryOfOrigin;  //zwraca kraj pochodzenia
-        public static int GetPhoneNumber() => PhoneNumber;  //zwraca numer tel
+}
+        
         //public void SayHi()
         //{
         //    Console.WriteLine($"Hello {FirstName} {LastName}");  //wita użytkownika 
         //}
 
-    }
-}
+    
+

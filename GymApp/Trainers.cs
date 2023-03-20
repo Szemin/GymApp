@@ -29,7 +29,7 @@ namespace GymApp;
             new Trainers("Jay Cutler","USA",4,"Oh God"),
             new Trainers("Ronnie Coleman","USA",8,"Lightweight baby"),
         };
-        return new List<Trainers>();
+        return trainers;
     }
     public static void ShowTrainerList()
     {
@@ -45,6 +45,7 @@ namespace GymApp;
             foreach (Trainers t in list)
             {
                 StringBuilder sb = new StringBuilder();
+                sb.AppendLine();
                 sb.AppendLine($"Name: {t.Name}");
                 sb.AppendLine($"Country: {t.CountryOfOrigin}");
                 sb.Append($"Wins at Mr Olimpia: {t.MrOlimpiaWins}");
@@ -54,5 +55,11 @@ namespace GymApp;
                 Console.WriteLine(result);
             }
     }
-    }
+    //public static void Test()
+    //{
+    //    List<Trainers> trainers= GetTrainers();
+    //    Trainers arnold = trainers.FirstOrDefault(e => e.Name == "Arnold Schwarzenegger");
+    //    Console.WriteLine(arnold);
+    //}
+}
 

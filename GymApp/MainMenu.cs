@@ -3,37 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+namespace GymApp;
 
-namespace GymApp
+internal class Wellcome
 {
-    public class Wellcome
+    public static void ShowTList() => Trainers.ShowTrainerList();
+    public static void ShowData() => Trainers.ShowTrainerData();
+
+    public static void WellcomeCard()
     {
-        static List<string> Trainers = new List<string>  //lista trenerów
-        {
-            "1.Ronnie Coleman",
-            "2.Jay Cutler",
-            "3.Arnold Schwarzenegger",
-            "4.Chris Bumstead"
-        };
-        //public void DisplayTrainer(string number)
-        //{
-        //    var trainer = Trainers.FirstOrDefault(c => c.Number == number);  //jeszcze do dopracowania co chciałem zrobić
-        //}
-        public static void WellcomeCardDesign()
-        {
-            Console.WriteLine("                            ");
-            Console.WriteLine("^    -----Wellcome-----    ^");
-            Console.WriteLine("------------ TO ------------");
-            Console.WriteLine("-----     ZYZZ GYM     -----");
-            Console.WriteLine("----------------------------");
-            Console.WriteLine();
-        }
-        public static void PersonalTrainers()
-        {
-          foreach (string trainers in Trainers)
-            {
-                Console.WriteLine(trainers);
-            }
-        }
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine("                            ");
+        sb.AppendLine("^    -----Wellcome-----    ^");
+        sb.AppendLine("------------ TO ------------");
+        sb.AppendLine("-----     ZYZZ GYM     -----");
+        sb.AppendLine("----------------------------");
+        sb.AppendLine();
+        string result = sb.ToString();
+        Console.WriteLine(sb);
     }
+
 }
+

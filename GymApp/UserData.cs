@@ -5,19 +5,18 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using GymApp.options;
+namespace GymApp;
 
-namespace GymApp
-{
     public class UserData
     {
         UserData userData = new();
         public static void UserProfile()        //profil klienta 
         {
-            Console.WriteLine($"First Name: {ClientInfo.GetFirstName()}");
-            Console.WriteLine($"Last Name: {ClientInfo.GetLastName()}");
-            Console.WriteLine($"Country of origin: {ClientInfo.GetCountryOfOrigin()}");
-            Console.WriteLine($"Phone number: {ClientInfo.GetPhoneNumber()}");
+            //Console.WriteLine($"First Name: {ClientInfo.GetFirstName()}");
+            //Console.WriteLine($"Last Name: {ClientInfo.GetLastName()}");
+            //Console.WriteLine($"Country of origin: {ClientInfo.GetCountryOfOrigin()}");
+            //Console.WriteLine($"Phone number: {ClientInfo.GetPhoneNumber()}");
         }     
        
     }
-}
+
